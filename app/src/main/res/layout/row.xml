@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:elevation="3dp"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent">
+
+        <TextView
+            android:id="@+id/txt_orderid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Order ID"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_ordernumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/txt_orderid"
+            android:hint="#21"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/subtotal_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:hint="Price"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_customer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_orderid"
+            android:hint="Customer Name"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txt_customer_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_customer_name"
+            android:hint="Address"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txt_customer_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_customer_address"
+            android:hint="Number"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/food_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/subtotal_price"
+            android:layout_alignParentEnd="true"
+            android:hint="food_item" />
+
+
+        <com.rm.rmswitch.RMTristateSwitch
+            android:id="@+id/switch_process"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_customer_number"
+            android:layout_alignParentEnd="true"
+            app:enabled="true"
+            app:forceAspectRatio="false"
+            app:switchBkgLeftColor="@color/red"
+            app:switchBkgMiddleColor="@color/grey"
+            app:switchBkgRightColor="@color/green"
+            app:switchDesign="large"
+            app:switchToggleLeftColor="@color/red"
+            app:switchToggleLeftImage="@drawable/abc_vector_test"
+            app:switchToggleMiddleColor="@color/grey"
+            app:switchToggleMiddleImage="@drawable/ic_launcher_background"
+            app:switchToggleRightColor="@color/green"
+            app:switchToggleRightImage="@drawable/ic_launcher_foreground" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
